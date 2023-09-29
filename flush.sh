@@ -40,14 +40,14 @@ sudo ln -s ${PWD}/src/bits /Library/Developer/CommandLineTools/usr/include/c++/v
 
 
 # setting gcc path
-if [[ ! -f "/opt/homebrew/bin/gcc-11" && "/opt/homebrew/bin/g++-11" ]];
+if [[ ! -f "/opt/homebrew/bin/gcc-12" && "/opt/homebrew/bin/g++-12" ]];
 then
-    echo "gcc-11 not found! program exiting.."
+    echo "gcc-12 not found! program exiting.."
     exit
 fi
 sudo mkdir -p /usr/local/bin
-sudo ln -s /opt/homebrew/bin/gcc-11 /usr/local/bin/gcc
-sudo ln -s /opt/homebrew/bin/g++-11 /usr/local/bin/g++
+sudo ln -s /opt/homebrew/bin/gcc-12 /usr/local/bin/gcc
+sudo ln -s /opt/homebrew/bin/g++-12 /usr/local/bin/g++
 
 
 
