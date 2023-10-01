@@ -1,12 +1,16 @@
 #!/bin/bash
 
 
-										###### system default ######
+############################
+###### system default ######
+############################
 
 mkdir -p /Users/${USER}/.config
 
 
-										###### plist configs ######
+###########################
+###### plist configs ######
+###########################
 
 # iterm configs
 sudo ln -s ${PWD}/src/plists/com.googlecode.iterm2.plist ~/Library/Preferences/
@@ -23,7 +27,9 @@ defaults write -g InitialKeyRepeat -int 15
 defaults write com.apple.dock "tilesize" -int "38" && killall Dock
 
 
-										#### symlinks and configs ####
+##################################
+###### symlinks and configs ######
+##################################
 
 ###### iterm ######
 sudo ln -s ${PWD}/src/config/iterm2 /Users/${USER}/.config
@@ -37,6 +43,9 @@ sudo mkdir -p /usr/local/include/
 sudo ln -s ${PWD}/src/bits /usr/local/include/
 sudo ln -s ${PWD}/src/bits /Library/Developer/CommandLineTools/usr/include/c++/v1 # for intellisense..
 
+##################
+###### misc ######
+##################
 
 # setting gcc path
 if [[ ! -f "/opt/homebrew/bin/gcc-12" && "/opt/homebrew/bin/g++-12" ]];
